@@ -1,0 +1,80 @@
+﻿<ion-view title="Sign Up">
+    <ion-content>
+            <section class="w-section mobile-wrapper">
+                <div class="page-content" id="main-stack" data-scroll="0">
+                    <div class="w-nav navbar" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
+                        <div class="w-container">
+                            <div class="wrapper-mask" data-ix="menu-mask"></div>
+                            <div class="navbar-title">Sign Up</div>
+                            <a class="w-inline-block navbar-button" href="#/login" data-load="1">
+                                <div class="navbar-button-icon icon ion-ios-close-empty"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body padding">
+                        <div class="logo-login smaller"></div>
+                        <div class="bottom-section padding">
+                            <div class="w-form">
+                                <!--<form id="submit-form" name="email-form" data-name="Email Form" data-redirect="settings.html" action="#">-->
+                                    <div>
+                                        <label class="label-form" for="full-name-field">FULL NAME</label>
+                                        <input class="w-input input-form" id="full-name-field" type="text" name="full-name" data-name="full-name" required="required" ng-model="nameUsr">
+                                        <div class="separator-fields"></div>
+                                    </div>
+                                    <div>
+                                        <label class="label-form" for="phone-no-field">Phone No.</label>
+                                        <input class="w-input input-form" id="phone-no-field" type="tel" name="phone-no" data-name="phone-no" required="required" ng-model="phoneUsr">
+                                        <div class="separator-fields"></div>
+                                    </div>
+                                <div>
+                                    <label class="label-form" for="profession-name-field">Professionality</label>
+                                    <!--<input class="w-input input-form" id="profession-name-field" type="text" name="profession-name" data-name="profession-name" required="required" ng-model="profUsr">-->
+                                    <!--<select ng-init="init()"  ng-model="selectedProf" ng-options="c as c for c in listProf">-->
+                                        <!--<option value="">Select Professionality</option>-->
+                                        <!--<option ng-repeat="facility in listProf" value="">{{facility.name}}</option>-->
+                                        
+                                    <!--</select>-->
+                                    <select ng-model="profUsr" ng-options="item.Text as item.Text for item in listProf">
+                                        <option value="">Select Professionality</option>
+                                        <!--<option ng-repeat="item in listProf" value="{{item.Value}}">{{item.Text}}</option>-->
+
+                                    </select>
+                                    <div class="separator-fields"></div>
+                                </div>
+                                    <div>
+                                        <label class="label-form" for="email-field">EMAIL</label>
+                                        <input class="w-input input-form" id="email-field" type="email" name="email" data-name="email" ng-model="emailUsr">
+                                        <div class="separator-fields"></div>
+                                    </div>
+                                    <div>
+                                        <label class="label-form" for="password-ield">PASSWORD</label>
+                                        <input class="w-input input-form" id="password-ield" type="password" name="password" data-name="password" required="required" ng-model="passwordUsr">
+                                        <div class="separator-fields"></div>
+                                    </div>
+                                    <div>
+                                        <label class="label-form" for="birthday-field">BIRTHDAY</label>
+                                        <input class="w-input input-form" id="birthday-field" type="date" name="birthday" data-name="birthday" required="required" ng-model="birthUsr">
+                                    </div>
+                                    <div class="separator-button-input"></div>
+                                    <input class="w-button action-button" type="submit" value="Sign Up" data-wait="Please wait..." ng-click="register(nameUsr,phoneUsr,profUsr,emailUsr,passwordUsr,birthUsr)">
+                                    <div class="separator-button"></div><a class="link-upper" href="#/login" data-load="1">ALREADY HAVE AN ACCOUNT? <strong class="b-link">SIGN IN</strong></a>
+                                <!--</form>-->
+                                <div class="w-form-done">
+                                    <p>Thank you! Your submission has been received!</p>
+                                </div>
+                                <div class="w-form-fail">
+                                    <p>Oops! Something went wrong while submitting the form</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="page-content loading-mask" id="new-stack">
+                    <div class="loading-icon">
+                        <div class="navbar-button-icon icon ion-load-d"></div>
+                    </div>
+                </div>-->
+                <div class="shadow-layer"></div>
+            </section>
+    </ion-content>
+</ion-view>

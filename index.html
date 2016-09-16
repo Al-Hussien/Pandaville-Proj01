@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Login</title>
+
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionic.css"/>
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/framework.css"/>
+    <link rel="stylesheet" type="text/css" href="css/washington.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js -->
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="js/framework.js"></script>
+    <!--<script src="cordova.js"></script>-->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- your app's js -->
+    <script src="js/angular.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/angularfire.min.js"></script>
+    <script src="js/webfont.js"></script>
+    <script>
+                WebFont.load({
+                    google: {
+                        families: ["Montserrat:400,700"]
+                    }
+                });
+    </script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBVJYKs2XaSyRWQV9x9aGj07GOYUblzHTs",
+    authDomain: "fir-example-9a18f.firebaseapp.com",
+    databaseURL: "https://fir-example-9a18f.firebaseio.com",
+    storageBucket: "fir-example-9a18f.appspot.com",
+  };
+  firebase.initializeApp(config);
+  var DBServ = firebase.database();
+  var AuthServ = firebase.auth();
+  var StrgServ = firebase.storage();/*i can prove it mathematically*/
+    </script>
+    <script src="js/app.js"></script>
+    <!-- Angular -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> -->
+    <!-- Firebase -->
+    <!--<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>-->
+    <!-- AngularFire -->
+    <!--<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>-->
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/logoStandford32.ico">
+    <link rel="apple-touch-icon" href="images/logoStandford32.ico">
+
+</head>
+<body ng-app="starter">
+
+    <ion-pane>
+        <!--<ion-header-bar class="bar-stable">
+            <h1 class="title">Ionic Blank Starter</h1>
+        </ion-header-bar>-->
+        <ion-nav-view></ion-nav-view>
+    </ion-pane>
+
+</body>
+</html>
